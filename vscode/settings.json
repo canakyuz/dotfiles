@@ -1,0 +1,73 @@
+{
+    "[css]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "breadcrumbs.enabled": false,
+    "catppuccin.accentColor": "sapphire",
+    "editor.accessibilitySupport": "off",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.cursorBlinking": "solid",
+    "editor.cursorSmoothCaretAnimation": "explicit",
+    "editor.cursorStyle": "line",
+    "editor.cursorSurroundingLines": 0,
+    "editor.cursorWidth": 2,
+    "editor.defaultColorDecorators": false,
+    "editor.fontFamily": "Geist Mono, MesloLGS NF, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 13,
+    "editor.formatOnSave": true,
+    "editor.lineHeight": 1.7,
+    "editor.matchBrackets": "always",
+    "editor.minimap.enabled": false,
+    "editor.mouseWheelZoom": true,
+    "editor.renderControlCharacters": false,
+    "editor.renderLineHighlight": "none",
+    "editor.renderLineHighlightOnlyWhenFocus": false,
+    "editor.renderWhitespace": "trailing",
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.horizontalScrollbarSize": 2,
+    "editor.scrollbar.vertical": "hidden",
+    "editor.scrollbar.verticalScrollbarSize": 2,
+    "editor.smoothScrolling": true,
+    "explorer.openEditors.visible": 1,
+    "files.autoSave": "onWindowChange",
+    "redhat.telemetry.enabled": true,
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "terminal.integrated.fontSize": 12,
+    "workbench.colorCustomizations": {
+      "editor.lineHighlightBackground": "#ccd3ff"
+    },
+    "workbench.colorTheme": "Catppuccin Macchiato",
+    "workbench.editor.limit.enabled": true,
+    "workbench.editor.limit.perEditorGroup": true,
+    "workbench.editor.limit.value": 1,
+    "workbench.editor.showTabs": "single",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.layoutControl.enabled": false,
+    "workbench.layoutControl.type": "menu",
+    "workbench.statusBar.visible": true,
+    "terminal.integrated.env.osx": {
+      "FIG_NEW_SESSION": "1"
+    },
+    "files.exclude": {
+      "**/.trunk/*actions/": true,
+      "**/.trunk/*logs/": true,
+      "**/.trunk/*notifications/": true,
+      "**/.trunk/*out/": true,
+      "**/.trunk/*plugins/": true
+    },
+    "files.watcherExclude": {
+      "**/.trunk/*actions/": true,
+      "**/.trunk/*logs/": true,
+      "**/.trunk/*notifications/": true,
+      "**/.trunk/*out/": true,
+      "**/.trunk/*plugins/": true
+    }
+  }
+  
