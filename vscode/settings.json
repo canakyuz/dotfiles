@@ -1,73 +1,158 @@
 {
-    "[css]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[typescript]": {
-      "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
-    "[typescriptreact]": {
-      "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
-    "breadcrumbs.enabled": false,
-    "catppuccin.accentColor": "sapphire",
-    "editor.accessibilitySupport": "off",
-    "editor.bracketPairColorization.enabled": true,
+    // open json editor for settings
+    "workbench.settings.editor": "json",
+
+    // Theme
+    "workbench.colorTheme": "Aura Soft Dark",
+    "workbench.iconTheme": "material-icon-theme",
+
+    // Change font
+    "editor.fontFamily": "Geist Mono",
+    "scm.inputFontFamily": "Geist Mono",
+    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+    "chat.editor.fontFamily": "Geist Mono",
+    "debug.console.fontFamily": "Geist Mono",
+    "editor.codeLensFontFamily": "Geist Mono",
+    "notebook.output.fontFamily": "Geist Mono",
+    "markdown.preview.fontFamily": "Geist Mono",
+    "editor.inlayHints.fontFamily": "Geist Mono",
+
+    // Font size
+    "editor.fontSize": 13,
+    "terminal.integrated.fontSize": 13,
+
+    // ui
+    "editor.minimap.enabled": false,
+    "window.commandCenter": false,
+    "editor.scrollbar.vertical": "auto",
+    "window.titleBarStyle": "native",
+    "editor.scrollbar.horizontal": "hidden",
+    "workbench.productIconTheme": "feather-vscode",
+    "editor.renderLineHighlight": "all",
+
+    // Cursor
     "editor.cursorBlinking": "solid",
     "editor.cursorSmoothCaretAnimation": "explicit",
     "editor.cursorStyle": "line",
-    "editor.cursorSurroundingLines": 0,
+    "editor.cursorSurroundingLines": 1,
     "editor.cursorWidth": 2,
-    "editor.defaultColorDecorators": false,
-    "editor.fontFamily": "Geist Mono, MesloLGS NF, Monaco, 'Courier New', monospace",
-    "editor.fontLigatures": true,
-    "editor.fontSize": 13,
-    "editor.formatOnSave": true,
-    "editor.lineHeight": 1.7,
-    "editor.matchBrackets": "always",
-    "editor.minimap.enabled": false,
-    "editor.mouseWheelZoom": true,
-    "editor.renderControlCharacters": false,
-    "editor.renderLineHighlight": "none",
-    "editor.renderLineHighlightOnlyWhenFocus": false,
-    "editor.renderWhitespace": "trailing",
-    "editor.scrollbar.horizontal": "hidden",
-    "editor.scrollbar.horizontalScrollbarSize": 2,
-    "editor.scrollbar.vertical": "hidden",
-    "editor.scrollbar.verticalScrollbarSize": 2,
-    "editor.smoothScrolling": true,
-    "explorer.openEditors.visible": 1,
-    "files.autoSave": "onWindowChange",
-    "redhat.telemetry.enabled": true,
-    "terminal.integrated.fontFamily": "MesloLGS NF",
-    "terminal.integrated.fontSize": 12,
-    "workbench.colorCustomizations": {
-      "editor.lineHighlightBackground": "#ccd3ff"
+
+    // APC
+    /* "apc.activityBar": {
+      "size": 42
+    }, */
+    "apc.electron": {
+      "titleBarStyle": "hiddenInset",
+      "trafficLightPosition": {
+        "x": 12,
+        "y": 10
+      }
     },
-    "workbench.colorTheme": "Catppuccin Macchiato",
-    "workbench.editor.limit.enabled": true,
+    "apc.font.family": "Space Mono",
+    "apc.monospace.font.family": "Space Mono",
+    "apc.statusBar": {
+      "position": "bottom",
+      "height": 28,
+      "fontSize": 12
+    },
+
+    // Cusom css
+    /* "apc.stylesheet": {
+      ".sidebar > .composite": "height: 12px !important",
+      ".title-label": "display: none !important",
+      ".title-actions": "display: none !important",
+      ".split-view-view .visible": "background-color: #110f17 !important",
+      ".tabs-and-actions-container > .editor-actions": "display: none !important",
+      ".titlebar-center": "display: none !important",
+      ".titlebar-right": "display: none !important",
+      ".inline-tabs-placeholder": "display: none !important",
+    },
+ */
+    // Aura theme customisation"editor.renderLineHighlight": "all",
+    "workbench.colorCustomizations": {
+      "[Aura Dark]": {
+        "editor.background": "#110f17",
+        "terminal.background": "#110f17",
+        "activityBar.background": "#110f17",
+        "statusBar.background": "#110f17",
+        "editorGroupHeader.tabsBackground": "#110f17",
+        "tab.inactiveBackground": "#110f17",
+      },
+      "[Aura Soft Dark]": {
+        "editor.lineHighlightBackground": "#3d395860",
+        "editor.lineHighlightBorder": "#3d3958",
+        "statusBar.background": "#110f17",
+        "tab.inactiveBackground": "#1c1a24",
+        "editorGroupHeader.tabsBackground": "#110f17",
+        "editor.background": "#1c1a24",
+        "terminal.background": "#110f17",
+        "activityBar.background": "#110f17",
+        "sideBar.background": "#110f17",
+      }
+    },
+
+    // Toggle excluded files
+    "files.exclude": {
+      "**/.git": false,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/.DS_Store": false,
+      "**/Thumbs.db": true,
+      "**/node_modules": true,
+      "**/.next": true,
+      "**/.husky": true,
+      "**/drizzle": true,
+      "**/dist": true,
+      "**/.todo.md": true,
+      "**/.vscode": true,
+      "**/.eslintrc.cjs": true,
+      "**/.editorconfig": true,
+      "**/.gitignore": false,
+      "**/.lintstagedrc.mjs": true,
+      "**/.markdownlint.json": true,
+      "**/.markdownlintignore": true,
+      "**/.prettierignore": true,
+      "**/bun.lockb": true,
+      "**/cspell.json": true,
+      "**/package-lock.json": true,
+      "**/pnpm-lock.yaml": true,
+      "**/next-env.d.ts": true,
+      "**/postcss.config.cjs": true,
+      "**/prettier.config.js": true,
+      "**/README.md": false,
+      "**/next.config.js": true,
+      "**/tailwind.config.ts": true,
+      "**/drizzle.config.ts": true,
+      "**/migrate.ts": true,
+      "**/.env.example": false
+    },
+
+    // Misc
+    "workbench.startupEditor": "readme",
+    "editor.mouseWheelZoom": true,
+    "workbench.editor.limit.enabled": false,
     "workbench.editor.limit.perEditorGroup": true,
     "workbench.editor.limit.value": 1,
-    "workbench.editor.showTabs": "single",
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.layoutControl.enabled": false,
-    "workbench.layoutControl.type": "menu",
-    "workbench.statusBar.visible": true,
+    "explorer.compactFolders": false,
+    "editor.tabSize": 1,
+    "editor.linkedEditing": true,
+    "breadcrumbs.filePath": "off",
+    "files.trimTrailingWhitespace": true,
+    "[markdown]": {
+      "files.trimTrailingWhitespace": false,
+      "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    },
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": true,
+    "yaml.schemas": {
+      "file:///Users/canakyuz/.vscode/extensions/atlassian.atlascode-3.0.9/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    },
+    "[jsonc]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.stickyScroll.enabled": true,
     "terminal.integrated.env.osx": {
       "FIG_NEW_SESSION": "1"
-    },
-    "files.exclude": {
-      "**/.trunk/*actions/": true,
-      "**/.trunk/*logs/": true,
-      "**/.trunk/*notifications/": true,
-      "**/.trunk/*out/": true,
-      "**/.trunk/*plugins/": true
-    },
-    "files.watcherExclude": {
-      "**/.trunk/*actions/": true,
-      "**/.trunk/*logs/": true,
-      "**/.trunk/*notifications/": true,
-      "**/.trunk/*out/": true,
-      "**/.trunk/*plugins/": true
     }
   }
-  
